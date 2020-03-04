@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+
+.app {
+    text-align: center;
+    height: 100vh;
+    padding-top: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-input {
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-item-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+    margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item-label {
+    font-size: 18px;
+    font-family: "Comic Sans MS", Arial;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.remove-items {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.todo-edit {
+    height: 30px;
+    flex-grow: 1;
+    font-size: 18px;
+    font-family: "Comic Sans MS", Arial;
+    padding: 0 15px;
 }
